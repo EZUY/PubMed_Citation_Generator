@@ -13,7 +13,12 @@ You will have a SAVE_CITATION.csv with following format:
 | Field      | Description |
 | ----------- | ----------- |
 | csv_pubmed_loc      | The location of csv you get from pubmed save citation in step 1 |
-| bold_Authors   | The Author you want to bold highlight;        |
+| save_references_name   | The name of saved docx file will be save_references_name.docx or save_references_name_{year}.docx if  seperate_in_year = TRUE |
+| bold_Authors   | The Author you want to bold highlight; The order of entry with those authors as first author/ last author will move up in list |
+| seperate_in_year  | if TRUE, will generate a list of docx file with save_references_name_{year}.docx; if FALSE, one save_references_name.docx will be generated |
+| citation.font  | font of the citation |
+| citation.font.size  | font size of the citation |
+| citation.link.color  | hyperlink color of the citation |
 
 
 ```r
@@ -25,7 +30,7 @@ get_citation_doc(
   csv_pubmed_loc,
   save_references_name,
   bold_Authors,
-  seperate_in_year = TRUE,
+  seperate_in_year = FALSE,
   citation.font = "Garamond",
   citation.font.size = 12,
   citation.link.color = "blue"
