@@ -11,4 +11,19 @@ You will have a SAVE_CITATION.csv with following format:
 
 
 
+```r
+csv_pubmed_loc = "SAVE_CITATION.csv"
+bold_Authors <-
+  c("Author A", "Author B")
+save_references_name = "referece"
+get_citation_doc(
+  csv_pubmed_loc,
+  save_references_name,
+  bold_Authors,
+  seperate_in_year = TRUE,
+  citation.font = "Garamond",
+  citation.font.size = 12,
+  citation.link.color = "blue"
+)
 
+```
