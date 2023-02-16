@@ -40,4 +40,4 @@ get_citation_doc(
 
 ### Output
 
-*Author B*, Author C, [Title](https://pubmed.ncbi.nlm.nih.gov/PMID). Citation. PubMed PMID: PMID; PubMed Central PMCID: PMCID
+**Author B**, Author C, [Title](https://pubmed.ncbi.nlm.nih.gov/PMID). Citation. PubMed PMID: PMID; PubMed Central PMCID: PMCID
