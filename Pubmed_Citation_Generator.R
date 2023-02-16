@@ -141,7 +141,7 @@ get_citation_doc <-
               citation.link.color
             )
         }
-        print(doc, target = paste(save_references_name, year, ".docx"))
+        print(doc, target = paste0(save_references_name,"_",year, ".docx"))
       }
     } else{
       doc = read_docx()
@@ -157,6 +157,6 @@ get_citation_doc <-
             citation.link.color
           )
       }
-      print(doc, target = paste(save_references_name, ".docx", ))
+      print(doc, target = paste0(save_references_name, ".docx", ))
     }
   }
